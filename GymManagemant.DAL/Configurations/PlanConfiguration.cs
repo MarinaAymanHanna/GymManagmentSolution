@@ -13,6 +13,7 @@ namespace GymManagment.Configurations
 
 
             builder.Property(p => p.Description)
+                .HasColumnType("varchar")
                 .HasMaxLength(200);
 
 
