@@ -1,4 +1,4 @@
-﻿/* ^ global style */
+/* ^ global style */
 
 :root {
     --primary-color: #070093;
@@ -588,3 +588,61 @@ footer .footer-content .location p {
         border-color: var(--primary-color);
         -webkit-text-fill-color: #fff; /* ensures text stays visible on hover */
     }
+
+/* ^ Navbar Active Pill Style */
+.navbar-nav .nav-link.active {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+    border-radius: 30px !important;
+    padding: 6px 22px !important;
+}
+
+/* ^ Plan Card & Outline Buttons */
+.plan-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+.btn-outline {
+    border: 1.5px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-outline.text-danger {
+    color: #dc3545 !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline.text-danger:hover {
+    background-color: #dc3545;
+    color: #fff !important;
+    border-color: #dc3545 !important;
+}
+
+.btn-outline.text-success {
+    color: #198754 !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline.text-success:hover {
+    background-color: #198754;
+    color: #fff !important;
+    border-color: #198754 !important;
+}
